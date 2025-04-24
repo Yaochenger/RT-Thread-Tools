@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug QEMU with GDB",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "E:\\rt-thread\\bsp\\xuantie\\smartl\\e906fdq\\rtthread.elf",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\RT-ThreadStudio\\repo\\Extract\\ToolChain_Support_Packages\\RISC-V\\XTGccElfNewlib\\V3.0.1\\R\\bin\\riscv64-unknown-elf-gdb.exe",
+            "miDebuggerServerAddress": "localhost:23333",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Start QEMU"
+        }
+    ]
+}

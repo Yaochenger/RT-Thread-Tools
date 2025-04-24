@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start QEMU",
+            "type": "shell",
+            "command": "E:\\XuanTie Core\\6.QEMU\\qemu-system-riscv32.exe",
+            "args": [
+                "-machine",
+                "smartl",
+                "-kernel",
+                "E:\\rt-thread\\bsp\\xuantie\\smartl\\e906fdq\\rtthread.elf",
+                "-nographic",
+                "-gdb",
+                "tcp::23333",
+                "-S"
+            ],
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.bin": "armabin",
+        ".jsonc": "json",
+        "string.h": "c",
+        "rthw.h": "c"
+    }
+}

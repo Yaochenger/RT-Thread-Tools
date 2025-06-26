@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start QEMU",
+            "type": "shell",
+            "command": "/home/rtt/qemu/install/bin/qemu-system-riscv64 -cpu c906fd -machine virt -m 256M -nographic -kernel /home/rtt/rt-thread/bsp/xuantie/virt64/c906/rtthread.bin -gdb tcp::23333 -S",
+            "isBackground": true,
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
